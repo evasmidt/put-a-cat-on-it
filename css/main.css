@@ -1,0 +1,19 @@
+body {
+  background-color: #E1EDED;
+  color: #A9A9A9;
+  font-family: arial; }
+
+section .hero {
+  background-image: url(../img/siberian-in-snow.jpg);
+  margin-top: 0;
+  height: 500px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  section .hero h2 {
+    color: #F9E3F3;
+    text-align: center;
+    padding-top: 25%; }
+
+/*# sourceMappingURL=main.css.map */
