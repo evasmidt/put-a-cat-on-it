@@ -2,24 +2,74 @@ body {
 	background-color: #E1EDED;
 	color: #A9A9A9;
 	font-family: arial;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
 }
+
+h1 {
+	margin: 1em;
+	color: #063457;
+}
+
+.menu_main {
+		padding: 0;
+		margin: 0;
+		
+		text-align: right;
+	
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+			li {
+				display: inline-block;
+				padding: 0 2em;
+				font-size: 1.2em;
+
+				
+			a {
+				text-decoration: none;
+				color: white;
+			}
+
+			:hover {
+				color: #FF7D7B;
+				padding-bottom: .7em;
+				border-bottom: 1px solid #FF7D7B;
+			}
+
+			}
+	}
 
 section {
 	.hero {
 		background-image: url(../img/siberian-in-snow.jpg);
-		margin-top: 0;
   		height: 500px;
   		margin: 0 auto;
+  		padding: 0;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 	  h2 {
-	  	color: #F9E3F3;
+	  	color: white;
 	  	text-align: center;
 	  	padding-top: 25%;
-	  	
+	  	margin-left: 1em;
 	  }
 
+	}
+
+
+}
+
+
+article {
+	h3 {
+		margin: 1em;
+	}
+	p {
+		margin: 1em;
 	}
 
 }
