@@ -1,12 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Imprima);
+@import url(https://fonts.googleapis.com/css?family=Cantata+One);
 body {
-  background-color: #E1EDED;
+  background-color: white;
   color: #A9A9A9;
-  font-family: arial;
+  font-family: Imprima, Helvetica Neue, arial, sans-serif;
   padding: 0;
   margin: 0;
   font-size: 16px; }
 
 h1 {
+  font-family: 'Cantata One', serif;
   margin: 1em;
   color: #063457; }
 
@@ -18,16 +21,38 @@ h1 {
     padding: 0;
     list-style-type: none; }
   .menu_main li {
-    display: inline-block;
-    padding: 0 2em;
-    font-size: 1.2em; }
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (min-width: 645px) {
+      .menu_main li {
+        display: inline-block;
+        font-size: 1.2em;
+        padding: 0 1em; }
+        .menu_main li :hover {
+          color: #FF7D7B;
+          border-bottom: 1px solid #FF7D7B; } }
+    @media (min-width: 720px) {
+      .menu_main li {
+        display: inline-block;
+        font-size: 1em;
+        padding: 0 .5em; }
+        .menu_main li :hover {
+          color: #FF7D7B;
+          border-bottom: 1px solid #FF7D7B; } }
+    @media (min-width: 900px) {
+      .menu_main li {
+        font-size: 1.2em;
+        padding: 0 2em; }
+        .menu_main li :hover {
+          color: #FF7D7B;
+          border-bottom: 1px solid #FF7D7B; } }
     .menu_main li a {
       text-decoration: none;
-      color: white; }
+      color: #45264D; }
     .menu_main li :hover {
       color: #FF7D7B;
-      padding-bottom: .7em;
-      border-bottom: 1px solid #FF7D7B; }
+      padding-bottom: .7em; }
 
 section .hero {
   background-image: url(../img/siberian-in-snow.jpg);
@@ -44,7 +69,8 @@ section .hero {
     margin-left: 1em; }
 
 article h3 {
-  margin: 1em; }
+  margin: 1em;
+  color: #DB9393; }
 article p {
   margin: 1em; }
 
