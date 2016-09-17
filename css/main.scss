@@ -19,8 +19,14 @@ body {
 
 h1 {
 	font-family: 'Cantata One', serif;
-	margin: 1em;
+	margin: 1em 1em;
 	color: #063457;
+	display: inline-block;
+	float: left;
+
+}
+.clear {
+	clear: both;
 }
 
 h3 {
@@ -34,16 +40,16 @@ p {
 
 .menu_main {
 		padding: 0;
-		margin: 0;
-		
+		margin: 1em 0;
 		text-align: right;
 	
 		ul {
 			padding: 0;
 			list-style-type: none;
+		
 		}
 			li {
-				font-size: 1.5em;
+				font-size: 1.25em;
 				text-align: center;
 				text-transform:uppercase;
 				
@@ -71,7 +77,6 @@ p {
   						padding: 0 2em;
   						:hover {
 								color: #FF7D7B;
-								
 								border-bottom: 1px solid #FF7D7B;
 							}
 					}
@@ -122,8 +127,12 @@ section {
 }
 
 .primary-content {
-	width: 35%;
-	float: left;
+	
+@media (min-width: 768px) {
+		width: 30%;
+		float: left;
+	}
+
 	vertical-align: top;
 	margin: 1em;
 	
@@ -131,11 +140,17 @@ section {
 }
 
 .secondary-content {
-	width: 60%;
-	float: left;
+		margin: 1em;
 	p {
 	  margin: 1em;
 	  }
+	@media (min-width: 768px) {
+		width: 55%;
+		float: left;
+	}
+
+
+	
 }
 
 

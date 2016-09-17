@@ -13,8 +13,13 @@ body {
 
 h1 {
   font-family: 'Cantata One', serif;
-  margin: 1em;
-  color: #063457; }
+  margin: 1em 1em;
+  color: #063457;
+  display: inline-block;
+  float: left; }
+
+.clear {
+  clear: both; }
 
 h3 {
   margin: 1em;
@@ -25,13 +30,13 @@ p {
 
 .menu_main {
   padding: 0;
-  margin: 0;
+  margin: 1em 0;
   text-align: right; }
   .menu_main ul {
     padding: 0;
     list-style-type: none; }
   .menu_main li {
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
     text-transform: uppercase; }
     @media (min-width: 645px) {
@@ -88,16 +93,21 @@ section .hero {
       display: inline-block; } }
 
 .primary-content {
-  width: 35%;
-  float: left;
   vertical-align: top;
   margin: 1em; }
+  @media (min-width: 768px) {
+    .primary-content {
+      width: 30%;
+      float: left; } }
 
 .secondary-content {
-  width: 60%;
-  float: left; }
+  margin: 1em; }
   .secondary-content p {
     margin: 1em; }
+  @media (min-width: 768px) {
+    .secondary-content {
+      width: 55%;
+      float: left; } }
 
 article {
   padding: 1em;
