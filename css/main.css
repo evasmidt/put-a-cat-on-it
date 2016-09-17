@@ -3,6 +3,13 @@
 * {
   box-sizing: border-box; }
 
+header {
+  min-height: 75px; }
+  @media (max-width: 768px) {
+    header {
+      padding-right: 0;
+      margin-right: 0; } }
+
 body {
   background-color: white;
   color: #A9A9A9;
@@ -14,9 +21,16 @@ body {
 h1 {
   font-family: 'Cantata One', serif;
   margin: 1em 1em;
+  padding: 0;
   color: #063457;
   display: inline-block;
-  float: left; }
+  float: left;
+  font-size: 1.5em; }
+  @media (max-width: 768px) {
+    h1 {
+      text-align: center;
+      width: 100%;
+      margin-left: 0; } }
 
 .clear {
   clear: both; }
@@ -31,43 +45,42 @@ p {
 .menu_main {
   padding: 0;
   margin: 1em 0;
-  text-align: right; }
+  text-align: right;
+  display: inline-block;
+  width: 75%; }
   .menu_main ul {
     padding: 0;
-    list-style-type: none; }
+    list-style-type: none;
+    float: right; }
   .menu_main li {
     font-size: 1.25em;
-    text-align: center;
-    text-transform: uppercase; }
-    @media (min-width: 645px) {
-      .menu_main li {
-        display: inline-block;
-        font-size: 1.2em;
-        padding: 0 1em; }
-        .menu_main li :hover {
-          color: #FF7D7B;
-          border-bottom: 1px solid #FF7D7B; } }
-    @media (min-width: 720px) {
-      .menu_main li {
-        display: inline-block;
-        font-size: 1em;
-        padding: 0 .5em; }
-        .menu_main li :hover {
-          color: #FF7D7B;
-          border-bottom: 1px solid #FF7D7B; } }
-    @media (min-width: 900px) {
+    float: right;
+    text-transform: uppercase;
+    padding: 0 1em; }
+    .menu_main li :hover {
+      color: #FF7D7B;
+      border-bottom: 1px solid #FF7D7B; }
+    @media (max-width: 768px) {
       .menu_main li {
         font-size: 1.2em;
-        padding: 0 2em; }
-        .menu_main li :hover {
-          color: #FF7D7B;
-          border-bottom: 1px solid #FF7D7B; } }
+        text-align: center;
+        float: initial;
+        margin: 0 1em;
+        width: 100%; } }
+    @media (max-width: 1020px) {
+      .menu_main li {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center; } }
     .menu_main li a {
       text-decoration: none;
       color: #45264D; }
     .menu_main li :hover {
       color: #FF7D7B;
       padding-bottom: .7em; }
+  @media (max-width: 768px) {
+    .menu_main {
+      margin: 0 auto; } }
 
 section .hero {
   background-image: url(../img/siberian-in-snow.jpg);
@@ -81,7 +94,8 @@ section .hero {
     color: white;
     text-align: center;
     padding-top: 25%;
-    margin-left: 1em; }
+    margin-left: 1em;
+    margin-top: 0; }
 
 .col {
   padding: 0; }
