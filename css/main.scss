@@ -3,6 +3,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Cantata+One);
 
+* {
+  box-sizing: border-box; 
+ }
+
 body {
 	background-color: white;
 	color: #A9A9A9;
@@ -12,10 +16,20 @@ body {
 	font-size: 16px;
 }
 
+
 h1 {
 	font-family: 'Cantata One', serif;
 	margin: 1em;
 	color: #063457;
+}
+
+h3 {
+	margin: 1em;
+	color: #DB9393
+	}
+
+p { 
+	margin: 1em; 
 }
 
 .menu_main {
@@ -92,20 +106,43 @@ section {
 	  	padding-top: 25%;
 	  	margin-left: 1em;
 	  }
-
 	}
+}
 
 
+
+.col {
+	@media (min-width: 768px) {
+		float: left;
+		width: 25%;
+		margin: 0 1em;
+		display: inline-block;
+	  }
+	padding: 0;
+}
+
+.primary-content {
+	width: 35%;
+	float: left;
+	vertical-align: top;
+	margin: 1em;
+	
+
+}
+
+.secondary-content {
+	width: 60%;
+	float: left;
+	p {
+	  margin: 1em;
+	  }
 }
 
 
 article {
-	h3 {
-		margin: 1em;
-		color: #DB9393
-	}
-	p {
-		margin: 1em;
-	}
+
+	padding: 1em;
+	margin: 1em;
+	
 
 }
